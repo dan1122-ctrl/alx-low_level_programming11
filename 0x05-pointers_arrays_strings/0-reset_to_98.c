@@ -10,7 +10,7 @@
 
 
 
-void reset_to_98(int *n)
+void reset 98(int *n)
 
 {
 
