@@ -8,9 +8,9 @@
 
 /**
  
- *print_rev - Prints a string in reverse order
- *@s: String to revers
- *Return: Nothing
+ * print_rev - Prints a string in reverse order
+ * @s: String to revers
+ * Return: Nothing
  */
 
 
