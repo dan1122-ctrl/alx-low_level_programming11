@@ -1,45 +1,29 @@
 #include <stdio.h>
 
+#include <string.h>
+
 int main()
 
 {
 
-	  char str[1000], rev[1000];
+	   char s[100];
 
-	    int i, j, count = 0;
 
-	      scanf("%s", str);
 
-	        printf("\nString Before Reverse: %s", str);
+	      printf("Enter a string to reverse\n");
 
-		  //finding the length of the string
-		  
-		    while (str[count] != '\0')
-		  
-		      {
-		  
-		          count++;
-		  
-		            }
-		  
-		              j = count - 1;
-		  
-		  
-		  
-		                //reversing the string by swapping
-		  
-		                  for (i = 0; i < count; i++)
-		  
-		                    {
-		  
-		                        rev[i] = str[j];
-		  
-		                            j--;
-		  
-		                              }
-		 
-		  
-		 
-	                               printf("\nString After Reverse: %s", rev);
-		 
-		                                }
+	         gets(s);
+
+
+
+		    strrev(s);
+
+
+
+		       printf("Reverse of the string: %s\n", s);
+
+
+
+		          return 0;
+
+}
