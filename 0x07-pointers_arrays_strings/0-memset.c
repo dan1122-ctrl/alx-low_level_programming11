@@ -1,28 +1,22 @@
-#include "main.h"
-
+ #include "main.h"
 /**
- * -memset - memory with a constant byte
- * @s: source string
- * @c: character to find
+ * _memset - fills memory with constant byte
+ * @s: pointer to the memory area
+ * @n: bytes of memory
+ * @b: constant byte
  *
- * Return: the string from character found
- *_memset(char *s, char b, unsigned int n);
+ * Return: the memory area of s
  */
 
-
-int a=0,b;
-
-while(s[a])
+char *_memset(char *s, char b, unsigned int n)
 {
-   a++;
+		unsigned int i = 0;
+
+			while (i < n)
+				{
+				s[i] = b;
+           			i++;
+				}
+			return (s);
+
 }
-   for(b=0;b<=a;b++)
-      {
-        if(c==s[b])
-      {
-          s+=b;
-          return(s);
-
-      }
-
-     }
