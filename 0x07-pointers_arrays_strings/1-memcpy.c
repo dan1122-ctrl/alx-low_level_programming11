@@ -1,33 +1,43 @@
+#include "main.h"                                                                                                                    
 
- #include "main.h"
+                                                                                                                                     
 
+/**                                                                                                                                  
 
-/**
- * _memcpy - copies memory area
- * @dest: the memory area
- * @src: constant byte
- * @n: bytes from memory area
- *
- * Return: a pointer to dest
- */
+ * _memcpy - Copies @n bytes from the memory area pointed                                                                            
 
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-	unsigned int i = 0;
+ *           to by @src into that pointed to by @dest.                                                                               
 
-     while (i < n)
-	{
-		dest[i] = src[i];
+ * @dest: A pointer to the memory area to copy @src into.                                                                            
 
-		i++;
+ * @src: The source buffer to copy characters from.                                                                                  
 
-	}
+ * @n: The number of bytes to copy from @src.                                                                                        
 
-	return (dest);
+ *                                                                                                                                   
+
+ * Return: A pointer to the destination buffer @dest.                                                                                
+
+ */                                                                                                                                  
+
+char *_memcpy(char *dest, char *src, unsigned int n)                                                                                 
+
+{                                                                                                                                    
+
+        unsigned int index;                                                                                                          
+
+        unsigned char *destination = dest;                                                                                           
+
+        const unsigned char *source = src;                                                                                           
+
+                                                                                                                                     
+
+        for (index = 0; index < n; index++)                                                                                          
+
+                destination[index] = source[index];                                                                                  
+
+                                                                                                                                     
+
+        return (dest);                                                                                                               
 
 }
-
-
-
-
-
