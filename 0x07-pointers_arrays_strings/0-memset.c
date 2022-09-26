@@ -1,7 +1,6 @@
- #include"main.h"
+ #include "main.h"
 
-
-/**
+/*
  * _memset - fills memory with constant byte
  * @s: pointer to the memory area
  * @n: bytes of memory
@@ -12,15 +11,25 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
+
 		unsigned int i = 0;
 
 			while (i < n)
-				{
-				s[i] = b;
-           			i++;
-				}
 
-			return (s);
+			{
+			s[i] = b;
+         		i++;
+
+											}
+		return (s);
 
 
 }
+
+Footer
+
+© 2022 GitHub, Inc.
+
+Footer navigation
+
+Term
